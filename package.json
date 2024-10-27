@@ -1,0 +1,14 @@
+{
+    "name": "ecommerce-monorepo",
+    "private": true,
+    "workspaces": [
+      "services/*"
+    ],
+    "scripts": {
+        "dev:inventory": "npm run dev --workspace=inventory",
+        "dev:dashboard": "npm run dev --workspace=dashboard",
+        "dev:store": "npm run dev --workspace=store",
+        "migrate:inventory": "npm run migrate --workspace=inventory"
+    }
+  }
+  
